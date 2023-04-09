@@ -5,7 +5,8 @@ Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [front
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Link](#link)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Thoughts](#thoughts)
@@ -13,7 +14,11 @@ Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [front
 
 ## Overview
 
-### Screenshot
+### Link
+
+[Github Pages](https://jdegand.github.io/dictionary-app/)
+
+### Screenshots
 
 ![](dictionary-app-mobile-dark-1.png)
 
