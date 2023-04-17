@@ -73,7 +73,7 @@ Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [front
 
 - api request throttling - same request and debounce
 - save dark mode preference to local storage & use local storage api to get value on load
-- useAxiosFunction - refactor necessary for easier testing ? - returning an array versus an object - makes it clunky to invoke functions if you were to use renderHook - i.e result.current[3]() - but hook shouldn't really be tested in isolation
+- useAxiosFunction - refactor necessary for easier testing ? - returning an array versus an object - makes it clunky to invoke functions if you were to use renderHook - i.e. result.current[index] () - but hook shouldn't really be tested in isolation
 - various tries at mocking useAxiosFunction error out and return a canceled error - not having access to the configObject is the problem 
 - svg fill color changes remove from component and use class tied to a css variable for color - i.e. use currentcolor 
 
