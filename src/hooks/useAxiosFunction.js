@@ -28,7 +28,6 @@ const useAxiosFunction = () => {
   };
 
   useEffect(() => {
-    // console.log(controller)
     // useEffect cleanup function
     return () => controller && controller.abort();
   }, [controller]);
