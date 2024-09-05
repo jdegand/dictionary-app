@@ -1,6 +1,6 @@
 # Dictionary App
 
-Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [frontend mentor challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL).  
+Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL).  
 
 ## Table of contents
 
@@ -20,27 +20,27 @@ Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [front
 
 ### Screenshots
 
-![](dictionary-app-mobile-dark-1.png)
+![Mobile Dark Mode](screenshots/dictionary-app-mobile-dark-1.png)
 
 ***
 
-![](dictionary-app-mobile-dark-pause.png)
+![Mobile Dark Pause Button](screenshots/dictionary-app-mobile-dark-pause.png)
 
 ***
 
-![](dictionary-app-light-desktop.png "desktop")
+![Desktop Light Mode](screenshots/dictionary-app-light-desktop.png "desktop")
 
 ***
 
-![](dictionary-app-light-word-not-found.png "error message")
+![Light Mode Error Message](screenshots/dictionary-app-light-word-not-found.png "error message")
 
 ***
 
-![](dictionary-app-error-goes-away-onchange-of-input.png)
+![Error Message goes away after onchange event](screenshots/dictionary-app-error-goes-away-onchange-of-input.png)
 
 ***
 
-![](dictionary-app-mobile-light-sans-serif.png "no audio available")
+![No audio available](screenshots/dictionary-app-mobile-light-sans-serif.png "no audio available")
 
 ***
 
@@ -53,29 +53,29 @@ Inspired by this [video](https://www.youtube.com/watch?v=HfVwcMEkKwQ) and [front
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Vitest](https://vitest.dev/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## Thoughts
 
-- Using context api for dark mode seems to rely upon using style tags to change the css. 
+- Using context api for dark mode seems to rely upon using style tags to change the CSS.
 - You could use classes with ternaries based on a context theme value.  
-- Context api best for low-frequency updates - because it causes all children to re-render. 
+- Context API best for low-frequency updates - because it causes all children to re-render.
 - Used svgs for icons - easier to change them for dark mode versus swapping multiple png icons.  
-- design choice - let error take up whole section and remove previous word search results - leave previous search result and add error message    
-- Adding a key to the audio tag is critical to having its src be updated
+- design choice - let error take up whole section and remove previous word search results - leave previous search result and add error message
+- Adding a key to the audio tag is critical to having its `src` be updated.
 - Original toggle for dark mode was inaccessible with tab key.  Changed to an accessible toggle from this [blog article](https://kittygiraudel.com/2021/04/05/an-accessible-toggle).  
-- pneumonoultramicroscopicsilicovolcanoconiosis - maxLength for search input 
+- `pneumonoultramicroscopicsilicovolcanoconiosis` - maxLength for search input.
 
 ## Continued development
 
-- api request throttling - same request and debounce
-- save dark mode preference to local storage & use local storage api to get value on load
-- useAxiosFunction - refactor necessary for easier testing ? - returning an array versus an object - makes it clunky to invoke functions if you were to use renderHook - i.e. result.current[index] () - but hook shouldn't really be tested in isolation
-- various tries at mocking useAxiosFunction error out and return a canceled error - not having access to the configObject is the problem 
-- svg fill color changes remove from component and use class tied to a css variable for color - i.e. use currentcolor 
+- API request throttling - same request and debounce
+- save dark mode preference to local storage & use local storage API to get value on load
+- `useAxiosFunction` - refactor necessary for easier testing? - returning an array versus an object - makes it clunky to invoke functions if you were to use `renderHook` - i.e. `result.current[index]()` - but hook shouldn't really be tested in isolation.
+- various tries at mocking `useAxiosFunction` error out and return a canceled error - not having access to the `configObject` is the problem.
+- SVG fill color changes remove from component and use class tied to a CSS variable for color - i.e. use `currentcolor`.
 
 ## Useful Resources
 
