@@ -29,7 +29,7 @@ const useAxiosFunction = () => {
 
   useEffect(() => {
     // useEffect cleanup function
-    return () => controller && controller.abort();
+    return () => controller?.abort();
   }, [controller]);
 
   return [response, error, loading, axiosFetch, setError]; // array problematic for testing?
