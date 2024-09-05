@@ -44,7 +44,6 @@ h3 {
   background: transparent;
   font-size: 20px;
   border: none;
-  /* outline-color: transparent; */
 }
 
 .nav__right__toggler {
@@ -69,67 +68,6 @@ h3 {
   height: 50px;
 }
 
-/* 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #757575;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #a547e9;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #a547e9;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 100vh;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-*/
-
 .Toggle {
   display: inline-flex;
   align-items: center;
@@ -141,47 +79,31 @@ input:checked + .slider:before {
 .Toggle__display {
   --offset: 0.25em;
   --diameter: 1.8em;
-  /*
-  width: calc(var(--diameter) * 2 + var(--offset) * 2); 
-  height: calc(var(--diameter) + var(--offset) * 2); 
-  */
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
-
   width: 60px;
   height: 40px;
-
   border: 0.1em solid rgb(0 0 0 / 0.2);
-
   position: relative;
   border-radius: 100vw;
   background-color: var(--toggle-background);
-
   transition: 250ms;
   cursor: pointer;
 }
 
 .Toggle__display::before {
   content: "";
-
-  /*
-  width: var(--diameter); 
-  height: var(--diameter); 
-  */
   width: 25px;
   height: 25px;
   border-radius: 50%;
-
   box-sizing: border-box;
   border: 0.1 solid rgb(0 0 0 / 0.2);
-
   position: absolute;
   z-index: 2;
   top: 50%;
   left: var(--offset);
   transform: translate(0, -50%);
-
   background-color: #fff;
   transition: inherit;
 }
@@ -199,20 +121,20 @@ input:checked + .slider:before {
   height: 100%;
 }
 
-.Toggle__input:focus + .Toggle__display {
+.Toggle__input:focus+.Toggle__display {
   outline: 1px solid blueviolet;
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-.Toggle__input:focus:not(:focus-visible) + .Toggle__display {
+.Toggle__input:focus:not(:focus-visible)+.Toggle__display {
   outline: 0;
 }
 
-.Toggle__input:checked + .Toggle__display {
+.Toggle__input:checked+.Toggle__display {
   background-color: var(--toggle-background);
 }
 
-.Toggle__input:checked + .Toggle__display::before {
+.Toggle__input:checked+.Toggle__display::before {
   transform: translate(100%, -50%);
 }
 
@@ -248,12 +170,18 @@ input:checked + .slider:before {
 }
 
 ul li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #9e50e7; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #9e50e7;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
 
 /* Meaning */
