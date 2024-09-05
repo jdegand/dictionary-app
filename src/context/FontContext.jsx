@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useMemo } from "react";
 
 export const FontContext = createContext();
 
@@ -9,8 +9,10 @@ export const FontProvider = ({ children }) => {
     setFont(e.target.value);
   };
 
+  const value = useMemo(() => ({ font, toggleFont }), [font]);
+
   return (
-    <FontContext.Provider value={{ font, toggleFont }}>
+    <FontContext.Provider value={value}>
       {children}
     </FontContext.Provider>
   );
